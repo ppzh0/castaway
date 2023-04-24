@@ -1,0 +1,96 @@
+@font-face {
+    font-family: edu;
+    src: url(fonts/EduVICWANTBeginner-Regular.ttf);
+}
+
+@font-face {
+    font-family: overlock;
+    src: url(fonts/Overlock-Regular.ttf);
+}
+
+@font-face {
+    font-family: mark;
+    src: url(fonts/markaregular.ttf);
+}
+
+@font-face {
+    font-family: ace;
+    src: url(fonts/anime-ace.regular.ttf);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: overlock, Arial, Helvetica, sans-serif;
+}
+
+.in-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.in-nav span:has(a) {
+    text-align: right;
+}
+
+.name {
+    margin-top: 0;
+    font-family: mark;
+}
+
+main {
+    font-family: edu, Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+span:has(.btn) {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+}
+
+.btn {
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    border-radius: 8px;
+    border: 2px solid #0ff;
+}
+
+.btn-nav-link {
+    transition: all .4s ease-out;
+}
+
+.btn-nav-link:hover {
+    background-color: #0ff;
+    color: #000;
+}
+
+article {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0 1rem;
+}
+
+article img {
+    border-radius: 6px;
+}
+
+.footerInfo {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    main {
+        grid-template-columns: auto;
+    }
+
+    .footerInfo {
+        grid-template-columns: repeat(2, auto);
+    }
+}
