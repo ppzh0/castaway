@@ -22,6 +22,10 @@
     box-sizing: border-box;
 }
 
+html {
+    cursor: url(img/cursor.cur), auto;
+}
+
 body {
     font-family: overlock, Arial, Helvetica, sans-serif;
 }
@@ -39,7 +43,10 @@ body {
     margin-top: 10px;
     font-family: mark;
     font-size: 2rem;
+    display: inline-block;
+    cursor: pointer;
 }
+
 
 main:not(.other) {
     font-family: edu, Arial, Helvetica, sans-serif;
@@ -48,7 +55,12 @@ main:not(.other) {
     gap: .5rem;
 }
 
-span:has(.btn) {
+main {
+    width: min(1000px, calc(70% + 100px));
+    margin: auto;
+}
+
+span .btn {
     position: absolute;
     top: 1.5rem;
     right: 1rem;
@@ -74,14 +86,14 @@ span:has(.btn) {
     color: #000;
 }
 
-article {
+.card {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: 0 1rem;
 }
 
-article img {
+.card img {
     border-radius: 6px;
 }
 
