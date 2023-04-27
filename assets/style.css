@@ -48,11 +48,15 @@ body {
 }
 
 
-main:not(.other) {
+main {
     font-family: edu, Arial, Helvetica, sans-serif;
     display: grid;
-    grid-template-columns: repeat(3, auto);
     gap: .5rem;
+    grid-template-columns: repeat(3, auto);
+}
+
+.other {
+    grid-template-columns: auto;
 }
 
 main {
@@ -113,12 +117,18 @@ span .btn {
     }
 }
 
-@media screen and (min-width: 689.9px) and (max-width: 900px) {
+@media screen and (min-width: 689.9px) and (max-width: 700px) {
     main {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .footerInfo {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (min-width: 700.1px) and (max-width: 1200px) {
+    main {
         grid-template-columns: repeat(2, auto);
     }
 }
