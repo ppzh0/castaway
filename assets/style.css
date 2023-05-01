@@ -18,8 +18,31 @@
     src: url(fonts/anime-ace.regular.ttf);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #35383d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #414449;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7289d7;
+}
+
+html, body {
+    height: 100%;
 }
 
 html {
@@ -28,6 +51,11 @@ html {
 
 body {
     font-family: overlock, Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    background: linear-gradient(to top, #7289d7, #414449, #35383d, #272a2f, #1c2023);
+    background-attachment: fixed;
 }
 
 .in-nav {
@@ -70,7 +98,7 @@ span .btn {
     right: 1rem;
 }
 
-.info > p {
+.info>p {
     font-family: overlock, Arial, Helvetica, sans-serif;
 }
 
