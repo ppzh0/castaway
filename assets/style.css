@@ -1,3 +1,5 @@
+@import url(default.css);
+
 @font-face {
     font-family: edu;
     src: url(fonts/EduVICWANTBeginner-Regular.ttf);
@@ -14,8 +16,8 @@
 }
 
 @font-face {
-    font-family: ace;
-    src: url(fonts/anime-ace.regular.ttf);
+    font-family: code;
+    src: url(fonts/FiraCode.ttf);
 }
 
 *,
@@ -41,7 +43,8 @@
     background: #7289d7;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -54,8 +57,14 @@ body {
     display: flex;
     flex-direction: column;
     color: aliceblue;
-    background: linear-gradient(to top, #7289d7, #414449, #35383d, #272a2f, #1c2023);
+    background: 
+        linear-gradient(
+            200deg, #3c3d3e, #363738, #303132, 
+            #2a2b2b, #242525, #1e1f1f, #181819, 
+            #121213, #0c0c0c, #060606
+        );
     background-attachment: fixed;
+    margin: 1.5rem;
 }
 
 .in-nav {
@@ -85,6 +94,7 @@ main {
 
 .other {
     grid-template-columns: auto;
+    font-family: code, Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -126,7 +136,8 @@ span .btn {
 }
 
 .card img {
-    border-radius: 6px;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem 3px #414449;
 }
 
 .footerInfo {
