@@ -43,11 +43,6 @@
     background: #7289d7;
 }
 
-html,
-body {
-    height: 100%;
-}
-
 html {
     cursor: url(img/cursor.cur), auto;
 }
@@ -55,18 +50,30 @@ html {
 body {
     font-family: overlock, Arial, Helvetica, sans-serif;
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
     color: aliceblue;
     background-image: url(img/Noir.jpg);
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     /* background: 
         linear-gradient(
             200deg, #3c3d3e, #363738, #303132, 
             #2a2b2b, #242525, #1e1f1f, #181819, 
             #121213, #0c0c0c, #060606
         ); */
+    margin: 1rem;
+    padding: .5rem;
+}
+
+footer,
+body {
     background-attachment: fixed;
-    margin: 1.5rem;
+    background-color: #0c0c0caa;
+    backdrop-filter: blur(.4rem);
+    padding: .5rem;
+    border-radius: 5px;
 }
 
 .in-nav {
