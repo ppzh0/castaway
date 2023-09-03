@@ -5,7 +5,7 @@ function setup() {
 }
 
 function generateRandomRotatedSquares() {
-    var numSquares = 69;
+    var numSquares = 15;
     var minSize = 10;
     var maxSize = 100;
 
