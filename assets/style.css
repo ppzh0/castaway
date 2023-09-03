@@ -130,3 +130,29 @@ footer {
     gap: 1rem 0;
 }
 
+@media screen and (max-width: 500px) {
+    .list-footer {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: small;
+    }
+    nav {
+        min-width: 80%;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+
+    .title {
+        font-size: 1.3em;
+    }
+
+    .cjs {
+        display: none;
+    }
+}
