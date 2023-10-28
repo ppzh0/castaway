@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Inter&family=Poppins&family=Ubuntu&display=swap');
 
 /* font-family: 'Inter', sans-serif; */
 /* font-family: 'Poppins', sans-serif; */
@@ -45,6 +45,10 @@ main p {
     margin-top: 1.5em;
 }
 
+details p {
+    font-family: 'Open Sans', sans-serif;
+}
+
 footer h4 {
     margin-top: 7em;
     font-size: 1rem;
@@ -66,4 +70,15 @@ summary:hover {
 h1, h4, summary {
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
+}
+
+@media screen and (min-width: 400px) {
+    main p {
+        width: 700px;
+        font-size: 17px;
+    }
+
+    details p {
+        font-size: 24px;
+    }
 }
