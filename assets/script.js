@@ -5,13 +5,13 @@ function setup() {
 }
 
 function generateRandomRotatedSquares() {
-    var numSquares = 15;
-    var minSize = 10;
-    var maxSize = 100;
+    var numSquares = 25;
+    var minSize = 7;
+    var maxSize = 65;
 
     for (var i = 0; i < numSquares; i++) {
-        var gray = random(20, 125);
-        fill(gray, 100);
+        var gray = random(10, 150);
+        fill(gray, 125);
 
         var squareSize = random(minSize, maxSize);
         var squareX = random(squareSize, width - squareSize);
