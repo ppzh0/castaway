@@ -25,6 +25,14 @@ main p {
     font-family: 'Ubuntu', sans-serif, serif;
 }
 
+a {
+    color: #7fffff;
+}
+
+a:visited {
+    color: #ddd;
+}
+
 /* background image */
 #defaultCanvas0 {
     pointer-events: none;
@@ -47,6 +55,7 @@ main p {
 
 details p {
     font-family: 'Open Sans', sans-serif;
+    padding-left: 1em;
 }
 
 footer h4 {
@@ -61,6 +70,7 @@ summary::marker {
 
 summary {
     font-size: 2em;
+    display: inline-block;
 }
 
 summary:hover {
