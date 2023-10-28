@@ -1,9 +1,9 @@
 # Castaway
-> **This repository is made for castaway discord server**
+**This repository is made for castaway discord server**
 
 ## Contribution
 
-Not accepting contributions until November 21<sup>st</sup> 2023.
+Not accepting contributions.
 
 ## About
 
