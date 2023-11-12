@@ -33,7 +33,8 @@
         <details>
             <summary>join discord server</summary>
             <p>
-                Welcome form the train station, <a href="https://discord.gg/a59QeWsp7d" target="_blank" rel="noopener noreferrer">get a ticket now</a>!
+                Welcome form the train station, <a href="https://discord.gg/a59QeWsp7d" target="_blank"
+                    rel="noopener noreferrer">get a ticket now</a>!
             </p>
         </details>
         <details>
@@ -45,7 +46,9 @@
         <details>
             <summary>contact</summary>
             <p>
-                You can contact the developer by <a href="mailto:narrtor06@gmail.com">email</a>. Check out <a href="https://github.com/ppzh0/castaway" target="_blank" rel="noopener noreferrer">GitHub Repository</a> 
+                You can contact the developer by <a href="mailto:narrtor06@gmail.com">email</a>. Check out <a
+                    href="https://github.com/ppzh0/castaway" target="_blank" rel="noopener noreferrer">GitHub
+                    Repository</a>
             </p>
         </details>
         <details>
@@ -59,6 +62,21 @@
     <footer>
         <h4>&copy; castaway 2023</h4>
     </footer>
+
+    <script>
+        // https://stackoverflow.com/a/36994802
+        const details = document.querySelectorAll("details");
+
+        details.forEach((targetDetail) => {
+            targetDetail.addEventListener("click", () => {
+                details.forEach((detail) => {
+                    if (detail !== targetDetail) {
+                        detail.removeAttribute("open");
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
