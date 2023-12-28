@@ -3,11 +3,11 @@
 
 ## Contribution
 
-Not accepting contributions.
+Contributions are now receiving.
 
 ## About
 
-Castaway is a discord server which is based on noir theme. There was no reason to do this. But I did it.
+Castaway is a discord server which is based on noir theme. There was no reason to do this but I did it.
 
 ## Preview & Access
 
